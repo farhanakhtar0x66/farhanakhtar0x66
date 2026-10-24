@@ -36,3 +36,32 @@ The live profile does not change until the draft pull request is merged.
 ![Desktop profile](previews/profile-desktop.png)
 
 ![Mobile learning section](previews/profile-mobile-learning.png)
+
+
+## DSA, badges, and project catalogue extension
+
+- Created the public `farhanakhtar0x66/dsa-cpp` repository with topic folders,
+  solution/notes templates and an automatically generated index. It starts at
+  zero uploaded solution files.
+- Read the supplied public LeetCode account successfully; accepted totals and
+  the submission calendar were both empty. The card displays those real values.
+- Twelve DSA tooling tests pass, including a regression ensuring a long current
+  streak is not truncated when a calendar year rolls over. Three profile-art
+  tests and deterministic generation of all nine stack badges also pass.
+- Final companion-repo GitHub workflows both passed at commit `1d95111`:
+  [Solutions](https://github.com/farhanakhtar0x66/dsa-cpp/actions/runs/40075858398)
+  and [LeetCode refresh](https://github.com/farhanakhtar0x66/dsa-cpp/actions/runs/40075858418).
+- GitHub desktop and 390-pixel mobile views were inspected. The mobile picture
+  selects the mobile SVG; the card and all nine logo badges fit without page
+  overflow. GitHub/raw image caches can temporarily retain an older layout.
+- The My Projects button was clicked and reached `projects/README.md`. The
+  catalogue includes all public owned repositories, distinguishing team work
+  and the Omarchy fork. Project images point only to the owner's public repos.
+- The approved ASCII source and static hero SVG are unchanged. New badges use
+  vendored official vectors with their MIT notice; the static directory header
+  uses no fake window controls.
+
+The API snapshot is historical data at its visible refresh time. Future
+LeetCode/API outages or delayed GitHub schedules remain external dependencies;
+a failed refresh retains the last successful committed snapshot. No accepted
+solutions, completed practice or activity is fabricated.

@@ -1,7 +1,7 @@
 [← Back to profile](../README.md)
 
 <p align="center">
-  <img src="assets/projects-header.svg" width="900" alt="Farhan Akhtar's project directory: systems, everyday tools, and experiments." />
+  <img src="assets/projects-header.svg?v=2" width="900" alt="Farhan Akhtar's project directory: systems, everyday tools, and experiments." />
 </p>
 
 # My projects
