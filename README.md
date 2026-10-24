@@ -11,6 +11,11 @@
 </p>
 
 <p align="center">
+  <a href="projects/README.md"><img src="assets/nav/my-projects.svg" width="168" height="42" alt="My Projects" /></a>
+  <a href="https://github.com/farhanakhtar0x66/dsa-cpp"><img src="assets/nav/dsa-solutions.svg" width="184" height="42" alt="DSA Solutions in C++" /></a>
+</p>
+
+<p align="center">
   <a href="#about">about</a> &nbsp;·&nbsp;
   <a href="#selected-work">selected work</a> &nbsp;·&nbsp;
   <a href="#learning">learning</a> &nbsp;·&nbsp;
@@ -57,6 +62,8 @@ Editable ASCII artwork and text effects for the terminal. An optional automatic 
 
 [Try it](https://github.com/farhanakhtar0x66/terminal-ascii-screensaver#install) · [Make it your own](https://github.com/farhanakhtar0x66/terminal-ascii-screensaver#customize-your-artwork)
 
+[Browse the full project directory](projects/README.md)
+
 <details>
   <summary>More experiments</summary>
 
@@ -78,13 +85,38 @@ Starting the week of **26 October 2026**. The aim is to understand the reasoning
 - **Build the foundations:** arrays, strings, searching, sorting, and recursion.
 - **Connect the ideas:** linked structures, trees, graphs, and dynamic programming.
 
-[The learning plan](learning/cpp-dsa.md)
+<picture>
+  <source media="(max-width: 1000px)" srcset="https://raw.githubusercontent.com/farhanakhtar0x66/dsa-cpp/main/assets/leetcode-mobile.svg" />
+  <img src="https://raw.githubusercontent.com/farhanakhtar0x66/dsa-cpp/main/assets/leetcode.svg" width="920" alt="LeetCode accepted-problem totals, submission streak, and past-year activity for farhanakhtar0x66. The card shows its last refresh time." />
+</picture>
+
+[My solutions](https://github.com/farhanakhtar0x66/dsa-cpp) · [LeetCode](https://leetcode.com/u/farhanakhtar0x66/) · [The learning plan](learning/cpp-dsa.md)
 
 ### `$ cat ~/.config/toolbox`
 
-**Languages I work with:** Rust, Python, C, Java, TypeScript, and Shell.<br />
-**Learning next:** C++ through DSA.<br />
-**My workspace:** macOS, Ghostty, tmux, Zsh, and [these dotfiles](https://github.com/farhanakhtar0x66/dotfiles). Linux is a recurring home for my experiments.
+<p>
+  <img src="assets/stack/rust.svg" height="36" alt="Rust" />
+  <img src="assets/stack/python.svg" height="36" alt="Python" />
+  <img src="assets/stack/c.svg" height="36" alt="C" />
+  <img src="assets/stack/java.svg" height="36" alt="Java" />
+  <img src="assets/stack/typescript.svg" height="36" alt="TypeScript" />
+  <img src="assets/stack/shell.svg" height="36" alt="Shell" />
+</p>
+
+**Learning through DSA**
+
+<p>
+  <a href="https://github.com/farhanakhtar0x66/dsa-cpp"><img src="assets/stack/cpp-learning.svg" height="36" alt="C++ — learning" /></a>
+</p>
+
+**My workspace**
+
+<p>
+  <img src="assets/stack/git.svg" height="36" alt="Git" />
+  <img src="assets/stack/linux.svg" height="36" alt="Linux" />
+</p>
+
+macOS, Ghostty, tmux, Zsh, and [these dotfiles](https://github.com/farhanakhtar0x66/dotfiles). Linux is a recurring home for my experiments.
 
 ---
 

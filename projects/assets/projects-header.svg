@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 156" role="img" aria-labelledby="title desc">
+  <title id="title">Farhan Akhtar — project directory</title>
+  <desc id="desc">A static terminal panel in Catppuccin Mocha. Systems, everyday tools, and experiments.</desc>
+  <rect width="900" height="156" rx="12" fill="#1e1e2e"/>
+  <circle cx="28" cy="25" r="4" fill="#f38ba8"/>
+  <circle cx="44" cy="25" r="4" fill="#f9e2af"/>
+  <circle cx="60" cy="25" r="4" fill="#a6e3a1"/>
+  <text x="82" y="29" fill="#a6adc8" font-size="12" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">farhan@workspace: ~/projects</text>
+  <path d="M24 45H876" stroke="#313244"/>
+  <text x="28" y="89" fill="#a6e3a1" font-size="24" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">$ <tspan fill="#cdd6f4">ls ~/projects</tspan><tspan fill="#cba6f7">_</tspan></text>
+  <text x="28" y="123" fill="#bac2de" font-size="15" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace">systems / everyday tools / experiments</text>
+</svg>
