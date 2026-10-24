@@ -121,7 +121,7 @@ macOS, Ghostty, tmux, Zsh, and [these dotfiles](https://github.com/farhanakhtar0
 ---
 
 <p align="center">
-  <samp>understand the pieces. build something of your own.</samp><br /><br />
+  <samp>build and build</samp><br /><br />
   <a href="mailto:farhanakhtar0x66@gmail.com">say hello</a> &nbsp;·&nbsp;
   <a href="https://github.com/farhanakhtar0x66?tab=repositories">all repositories</a>
 </p>
