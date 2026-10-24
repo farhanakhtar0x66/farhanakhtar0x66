@@ -1,8 +1,8 @@
 <!-- Canonical character art: art/creation.txt. Regenerate: python3 scripts/generate_creation.py -->
 <p align="center">
   <picture>
-    <source media="(prefers-reduced-motion: reduce)" srcset="assets/creation-static.svg" />
-    <img src="assets/creation.svg" width="930" alt="AKHTAR. Two stippled hands reach toward one another, their index fingers separated by a small gap. A tiny lavender spark appears briefly between them." />
+    <source media="(prefers-reduced-motion: reduce)" srcset="assets/creation-static.svg?v=2" />
+    <img src="assets/creation.svg?v=2" width="930" alt="AKHTAR. Two stippled hands reach toward one another, their index fingers separated by a small gap. A tiny lavender spark appears briefly between them." />
   </picture>
   <br />
   <sub><a href="art/README-static.md">text-only version</a></sub>
