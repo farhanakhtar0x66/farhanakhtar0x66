@@ -61,7 +61,7 @@ def outputs():
     # A text-only alternative preserves the full fine hand grid at native font size.
     inside=182
     lines=['╭'+'─'*inside+'╮']
-    lines+=['│'+l.rstrip().center(inside)+'│' for l in title]
+    lines+=['│'+l.center(inside)+'│' for l in title]
     lines+=['│'+' '*inside+'│']
     lines+=['│'+'  '+l+'  '+'│' for l in hands]
     lines+=['╰'+'─'*inside+'╯']

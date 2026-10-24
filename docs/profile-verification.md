@@ -16,7 +16,8 @@
 
 ## Checks
 
-- `python3 -m unittest discover -s tests -v`: 2 static-header tests pass.
+- `python3 -m unittest discover -s tests -v`: 3 static-header tests pass, including a regression check for wordmark
+  alignment in the text-only fallback.
 - `python3 scripts/generate_creation.py --check`: generated assets are current.
 - `git diff --check`: no whitespace errors.
 - Local link/anchor audit: all four top navigation destinations exist, the
@@ -31,3 +32,7 @@ browser in dark appearance, not a physical device or a cross-browser matrix.
 The wider text-only art alternative can scroll by design.
 
 The live profile does not change until the draft pull request is merged.
+
+![Desktop profile](previews/profile-desktop.png)
+
+![Mobile learning section](previews/profile-mobile-learning.png)

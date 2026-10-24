@@ -1,7 +1,6 @@
 # Learning DSA in C++
 
-A starting plan for the week of **26 October 2026**. This is a learning roadmap,
-not a record of completed problems or a claim of C++ proficiency.
+A starting plan for the week of **26 October 2026**.
 
 The goal: understand the idea, implement it clearly, and explain why it works.
 Move on when a topic makes sense; the phases below are not weekly deadlines.

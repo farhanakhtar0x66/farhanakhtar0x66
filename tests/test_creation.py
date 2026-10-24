@@ -30,4 +30,10 @@ class CreationTests(unittest.TestCase):
             xs=[float(x) for x in node.get('x').split()]
             self.assertTrue(all(24+3*9<=x<24+181*9 for x in xs))
 
+    def test_text_fallback_preserves_wordmark_column_alignment(self):
+        source=(ROOT/'art/wordmark.txt').read_text().splitlines()
+        rendered=(ROOT/'art/README-static.md').read_text().split('<pre>\n',1)[1].splitlines()[1:7]
+        expected=['│'+line.center(182)+'│' for line in source]
+        self.assertEqual(rendered,expected)
+
 if __name__=='__main__':unittest.main()
