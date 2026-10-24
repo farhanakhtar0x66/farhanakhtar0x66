@@ -1,67 +1,42 @@
-# The moment before creation
+# AKHTAR — static character artwork
 
-The outlined AKHTAR wordmark and stippled hands remain character art. The index
-fingers have manually tapered contours and a smaller gap. Palms, curled digits,
-lettering and frame remain stationary. No new cursor, reveal or lettering flash.
+The header is now entirely static. It preserves the original outlined wordmark,
+stippled hands, thin frame and Mocha colors. The artificial finger extensions,
+creation spark and all animation code have been removed.
 
-## Editing and building
+The hands use a finer 178-column × 24-row character grid recovered from the
+owner's supplied reference, with manual edits to the curved left index contour
+and fingertip pad. The left fingers droop naturally; the right index extends
+across the open space above its curled fingers. The fingers are not stretched
+toward each other or aligned into a horizontal bridge.
 
-Edit `art/creation.txt`, then run:
+## Editable sources
+
+- `art/creation.txt`: the full-resolution hands, using `•`, `.` and spaces.
+- `art/wordmark.txt`: the original six-row outlined AKHTAR lettering.
+- `art/README-static.md`: generated, entirely text-only alternative.
 
 ```sh
 python3 scripts/generate_creation.py
+python3 scripts/generate_creation.py --check
 python3 -m unittest discover -s tests -v
 ```
 
-Python 3.9+; standard library only. `--check` verifies checked-in outputs without
-writing files. Every source row is exactly 93 single-width cells, including its
-border. The wordmark is the original six-row block, centered as a unit.
+Python 3.9+; no packages required. The reference-grid recovery was a one-time
+preparation step; regenerating the header needs only these editable text files.
 
-- `assets/creation.svg`: actual monospaced `<text>` glyphs, explicit cell positions.
-- `assets/creation-static.svg`: the same composition without animation.
-- `art/README-static.md`: an entirely text-only `<pre>` alternative.
+The README displays `assets/creation-static.svg`. It contains real text glyphs,
+explicit character positions, and a solid background. No traced paths, raster
+artwork, scripts, animation, remote fonts, or external services. The wordmark
+uses twice the hand grid's cell size to preserve its original proportions while
+the finer hand grid retains finger joints that the old coarse grid discarded.
 
-The canonical source contains Unicode box-drawing and stipple glyphs, all one
-cell wide in the intended monospace fonts. This is UTF-8 text art rather than
-strict seven-bit ASCII. No traced paths, raster images, remote fonts, scripts,
-external services, gradients, or runtime packages are used by the new header.
-Existing `terminal-hero.*` assets and `render_hero.py` are older, unused artwork;
-they remain untouched.
+Trade-off: GitHub displays the SVG as an image; its text is editable in the
+canonical sources but is not directly selectable in the README image. The
+linked text-only alternative is selectable and scrolls horizontally where
+necessary. A dense hand grid cannot retain this detail in a narrow plain `<pre>`
+block. The SVG scales the complete composition to the available width.
 
-## Timing
-
-The CSS loop lasts ten seconds. From 0–6 seconds everything is still. From
-6–7.2 seconds the distal index contours approach by four SVG units each (less
-than half a cell); they hold until 7.8 seconds. A single lavender stipple dot
-fades in and out from 7.2–8 seconds. The fingers return by 8.8 seconds, then stay
-still across the loop boundary. The fingertips never touch. No rapid flashing.
-
-## Rendering trade-off and accessibility
-
-Plain Markdown text cannot animate. The README embeds a repository-hosted SVG
-image, preserving selectable/editable text in the source and a linked text-only
-alternative. The SVG is an image to assistive technology, with descriptive alt
-text in the README and its own title/description. Internal CSS disables all
-motion for `prefers-reduced-motion: reduce`; the README `<picture>` also selects
-the static SVG for that preference where GitHub preserves the source selector.
-Without CSS animation the complete still scene remains visible.
-
-The fixed Mocha mantle and text colors preserve contrast on light and dark
-GitHub pages. The SVG scales proportionally to available width, including its
-frame and all fingers; it does not depend on the README's font metrics. Small
-screens retain the complete composition. The linked text version provides
-full-size characters and may scroll horizontally on phones.
-
-GitHub's [image documentation](https://docs.github.com/en/repositories/working-with-files/using-files/working-with-non-code-files)
-says SVG inline scripting and animation are unsupported in its file viewer.
-That statement alone does not establish behavior for an SVG embedded as a
-README image. Actual branch README playback must be tested separately; see
-`docs/verification.md` for observed results and limits. Browser preferences,
-image-proxy caching and future GitHub behavior can affect playback. A still
-scene is always a valid fallback. No GIF should be substituted unless embedded
-SVG playback has actually failed.
-
-Composition reference: [Vatican Museums — Creation of Adam](https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/cappella-sistina/volta/storie-centrali/creazione-di-adamo.html),
-plus the owner's supplied stippled-hand reference. This work retains the existing
-repository artwork and manually revises its fingertips rather than converting
-or embedding a painting image.
+The artwork is static for every viewer, including those requesting reduced
+motion. Descriptive alt text accompanies the README image. The rest of the
+README is preserved byte-for-byte after its original header.
