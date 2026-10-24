@@ -121,7 +121,7 @@ macOS, Ghostty, tmux, Zsh, and [these dotfiles](https://github.com/farhanakhtar0
 ---
 
 <p align="center">
-  <samp>build and build</samp><br /><br />
+  <samp>“I'd rather let the world down, than be let down by the world.”</samp><br /><br />
   <a href="mailto:farhanakhtar0x66@gmail.com">say hello</a> &nbsp;·&nbsp;
   <a href="https://github.com/farhanakhtar0x66?tab=repositories">all repositories</a>
 </p>
