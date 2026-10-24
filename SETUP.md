@@ -1,56 +1,51 @@
-# Publish your GitHub profile
+# Maintaining this profile
 
-GitHub shows `README.md` from a **public repository named exactly `farhanakhtar0x66`** on your profile.
+GitHub displays the root `README.md` of this public repository on
+[Farhan's profile](https://github.com/farhanakhtar0x66). Review changes through a
+pull request before merging into the default branch.
 
-## Fast setup (GitHub CLI installed)
+## Edit the profile
 
-1. Extract this package and open your terminal inside its root folder.
-2. Check that you're signed in to the correct GitHub account:
+- **Introduction:** keep it short, personal, and accurate.
+- **Selected work:** three projects, each with a concrete description and useful
+  links. Put additional experiments in the disclosure.
+- **Learning:** keep the C++/DSA status honest. The current plan begins the week
+  of 26 October 2026; update the paragraph and TOML `next` field as work starts.
+- **Toolbox:** distinguish languages already used from those being learned.
+- **Contact:** use only real public destinations; add coding-profile links when
+  the owner supplies them.
 
-   ```bash
-   gh auth status
-   ```
+The learning roadmap lives in `learning/cpp-dsa.md`. It is a plan, not a progress
+tracker. Link a practice repository once one exists rather than publishing
+unverified problem counts or completed milestones.
 
-3. Run:
+## Edit the static header
 
-   ```bash
-   git init -b main
-   git add README.md assets/ scripts/ SETUP.md
-   git commit -m "feat: design terminal-themed GitHub profile"
-   gh repo create farhanakhtar0x66 --public --description "Personal GitHub profile" --source=. --remote=origin --push
-   ```
+Edit `art/creation.txt` for the hands or `art/wordmark.txt` for the lettering.
+The fine grid preserves the reference's finger detail. Then run:
 
-4. Visit https://github.com/farhanakhtar0x66 and refresh. Your profile README should appear above pinned repositories.
-
-If you prefer the GitHub website: go to https://github.com/new, create a **Public** repository named `farhanakhtar0x66` with **no auto-generated README**, then add this folder's files using Git/GitHub Desktop, or upload `README.md` and the `assets/` folder using GitHub's web interface.
-
-## Change the animated header
-
-Edit `scripts/render_hero.py` (phrases, colors, art), then run:
-
-```bash
-python -m pip install pillow
-python scripts/render_hero.py
-git add assets/ scripts/render_hero.py && git commit -m "style: refine animated banner" && git push
+```sh
+python3 scripts/generate_creation.py
+python3 -m unittest discover -s tests -v
 ```
 
-The GIF runs without JavaScript, a token, external API, or GitHub Actions; the generator is not required for displaying it. The `terminal-hero-static.png` is an accessible still-frame alternative if you prefer to remove animation.
+The generator uses the Python standard library. It updates
+`assets/creation-static.svg` and the selectable `art/README-static.md` alternative.
+Commit the generated files with their sources. Increment the README image's
+version query if GitHub is showing an old cached asset.
 
-## Clean up your pins (manually on GitHub)
+The SVG is deliberately static. It contains text glyphs and no runtime code,
+remote fonts, image services, or animation. Older `terminal-hero.*` assets and
+`scripts/render_hero.py` are legacy artwork and are not used by this README.
 
-On your GitHub profile, click **Customize your pins** and prioritize:
+## Before merging
 
-1. Anpasser
-2. Hayate
-3. JalNet submission
-4. Dotfiles
-5. Terminal ASCII Screensaver
+Run `python3 scripts/generate_creation.py --check`, the tests above, and
+`git diff --check`. Open the branch README on GitHub and inspect the full header,
+section links, project links, disclosure, and learning-plan link. Check a narrow
+viewport as well as desktop. Keep the header static and the rest of the profile
+readable as ordinary text.
 
-`neuromesh` is currently private, so it won't work as a public showcase link. Change that only when you decide it's ready to be public.
-
-## Design notes
-
-- Palette: Catppuccin Mocha, matte colors, no gradients.
-- One animated banner rather than competing stats cards or an animated "contribution snake."
-- Readable in GitHub's light and dark modes (the banner itself is intentionally dark).
-- Reusable self-hosted assets, no third-party uptime or request limits.
+The current design rationale and consulted references are recorded in
+`docs/profile-design.md`; layout checks are recorded in
+`docs/profile-verification.md`.

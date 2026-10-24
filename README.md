@@ -5,60 +5,91 @@
   <sub><a href="art/README-static.md">text-only version</a></sub>
 </p>
 
-
-
 <p align="center">
-  <samp>systems · linux · developer tools · useful experiments</samp>
+  <strong>Farhan Akhtar</strong><br />
+  <samp>computer science freshman · systems, terminals &amp; useful experiments</samp>
 </p>
 
 <p align="center">
-  <a href="#-whoami">about</a> &nbsp;·&nbsp;
-  <a href="#-ls-projects">projects</a> &nbsp;·&nbsp;
-  <a href="https://github.com/farhanakhtar0x66?tab=repositories">all repositories</a> &nbsp;·&nbsp;
+  <a href="#about">about</a> &nbsp;·&nbsp;
+  <a href="#selected-work">selected work</a> &nbsp;·&nbsp;
+  <a href="#learning">learning</a> &nbsp;·&nbsp;
   <a href="mailto:farhanakhtar0x66@gmail.com">email</a>
 </p>
 
 ---
 
+<a id="about"></a>
 ### `$ whoami`
 
-I'm **Farhan**, a computer science student who likes understanding how things work under the hood — and then building something with what I've learned. I spend a lot of time around **Linux, systems programming, developer tooling, and unusual side projects**.
+I'm **Farhan**, a computer science student who likes understanding how software works under the hood—and building something useful from what I learn.
+
+I’m drawn to **systems programming, Linux, compilers, and developer tools**. Some projects explore how old software can run on new systems; others make everyday things, like typing or using a terminal, feel better.
 
 ```toml
 # ~/.config/farhan/profile.toml
-name       = "Farhan Akhtar"
-interests  = ["systems", "linux", "compilers", "terminal interfaces"]
-languages  = ["Rust", "Python", "C", "Java", "TypeScript", "Shell"]
-currently  = "experimenting with native software and better developer tools"
+interests = ["systems", "linux", "compilers", "terminal interfaces"]
+approach  = "understand it, build it, test what it actually does"
+next      = "data structures & algorithms in C++"
 ```
 
+<a id="selected-work"></a>
 ### `$ ls ~/projects`
 
-**[anpasser](https://github.com/farhanakhtar0x66/anpasser)** — `binary analysis / compilers / experimental`  
-Research tooling for ahead-of-time transformation of Windows games into native Linux programs. Focused on recoverable behavior and reproducible verification; **not** a universal game converter.
+#### [anpasser](https://github.com/farhanakhtar0x66/anpasser)
+`Rust` `binary analysis` `compilers`
 
-**[hayate](https://github.com/farhanakhtar0x66/hayate)** — `android / offline / input method`  
-A lightweight Android flick keyboard with suggestions, clipboard features, and a programmer mode. Designed to work without network access.
+Research into turning Windows game code into native Linux programs ahead of time. Explores code recovery, compiler passes, and native API migration, with Windows/Linux behavior comparisons to check the results. **Experimental; not a universal game converter.**
 
-**[jalnet-submission](https://github.com/farhanakhtar0x66/jalnet-submission)** — `typescript / android / cedar`  
-A map-first water-incident reporting prototype with local Cedar authorization, private evidence handling, and route warnings. Local/demo scope; cloud deployment is unverified.
+[Explore the project](https://github.com/farhanakhtar0x66/anpasser#why-anpasser) · [See the evidence](https://github.com/farhanakhtar0x66/anpasser#evidence-not-hype)
 
-**[dotfiles](https://github.com/farhanakhtar0x66/dotfiles)** — `macos / shell / catppuccin`  
-My macOS setup: AeroSpace, SketchyBar, Ghostty, tmux, Zsh, and a lot of Catppuccin Mocha.
+#### [hayate](https://github.com/farhanakhtar0x66/hayate)
+`Java` `Android` `offline-first`
+
+An Android keyboard that fits the alphabet onto six letter keys. Tap or flick to type, use offline suggestions, and switch to a programmer mode for code. **No network permission.**
+
+[How it works](https://github.com/farhanakhtar0x66/hayate#type) · [Android releases](https://github.com/farhanakhtar0x66/hayate/releases)
+
+#### [terminal-ascii-screensaver](https://github.com/farhanakhtar0x66/terminal-ascii-screensaver)
+`Python` `Linux / macOS` `terminal tooling`
+
+Editable ASCII artwork and text effects for the terminal. An optional automatic mode covers long-running tasks, then restores the terminal when input or task completion needs your attention.
+
+[Try it](https://github.com/farhanakhtar0x66/terminal-ascii-screensaver#install) · [Make it your own](https://github.com/farhanakhtar0x66/terminal-ascii-screensaver#customize-your-artwork)
 
 <details>
-  <summary><code>$ ls ~/side-quests</code></summary>
-  <br />
+  <summary>More experiments</summary>
 
-  - **[terminal-ascii-screensaver](https://github.com/farhanakhtar0x66/terminal-ascii-screensaver)** — an animated ASCII terminal screensaver for Linux and macOS.
+  - **[dotfiles](https://github.com/farhanakhtar0x66/dotfiles)** — my macOS workspace: AeroSpace, SketchyBar, Ghostty, tmux and Zsh, brought together with Catppuccin Mocha.
+  - **[JalNet](https://github.com/farhanakhtar0x66/jalnet-submission)** — an Android water-reporting prototype with route warnings and Cedar-protected evidence. Local/demo scope; cloud deployment is unverified.
   - **[LEX](https://github.com/farhanakhtar0x66/LEX)** — source-linked environmental cleanup evidence and reporting.
   - **[arasaka-deepdata-2026](https://github.com/farhanakhtar0x66/arasaka-deepdata-2026)** — a hackathon prep kit for tabular ML, EDA, and fast iteration.
 
 </details>
 
+<a id="learning"></a>
+### `$ cat ~/learning.md`
+
+**Next chapter: data structures & algorithms in C++.**
+
+Starting the week of **26 October 2026**. The aim is to understand the reasoning behind a solution, write it clearly, and explain its time and space costs.
+
+- **Get comfortable:** C++ fundamentals, the standard library, and complexity.
+- **Build the foundations:** arrays, strings, searching, sorting, and recursion.
+- **Connect the ideas:** linked structures, trees, graphs, and dynamic programming.
+
+[The learning plan](learning/cpp-dsa.md)
+
+### `$ cat ~/.config/toolbox`
+
+**Languages I work with:** Rust, Python, C, Java, TypeScript, and Shell.<br />
+**Learning next:** C++ through DSA.<br />
+**My workspace:** macOS, Ghostty, tmux, Zsh, and [these dotfiles](https://github.com/farhanakhtar0x66/dotfiles). Linux is a recurring home for my experiments.
+
 ---
 
 <p align="center">
-  <samp>still learning, still shipping.</samp><br />
-  <sub><a href="mailto:farhanakhtar0x66@gmail.com">say hello</a> · <a href="https://github.com/farhanakhtar0x66?tab=followers">follow along</a></sub>
+  <samp>understand the pieces. build something of your own.</samp><br /><br />
+  <a href="mailto:farhanakhtar0x66@gmail.com">say hello</a> &nbsp;·&nbsp;
+  <a href="https://github.com/farhanakhtar0x66?tab=repositories">all repositories</a>
 </p>

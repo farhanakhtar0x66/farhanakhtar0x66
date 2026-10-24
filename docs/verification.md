@@ -1,5 +1,8 @@
 # Static header verification — 24 October 2026
 
+This records the header-only revision. Subsequent profile-content changes are
+covered separately in `profile-verification.md`.
+
 This revision replaces the animation approach with static text-glyph artwork.
 Earlier animation verification is superseded by the owner's observed playback
 failure and request to stop pursuing motion.
@@ -11,7 +14,8 @@ failure and request to stop pursuing motion.
   index, separated hanging fingers, extended right index and negative space.
 - The original six-row wordmark is preserved. It uses a grid exactly twice the
   hand character grid so the title retains its established visual proportions.
-- All README content after the original header is byte-for-byte unchanged.
+- In the header-only revision, README content after the original header was
+  byte-for-byte unchanged. Later profile changes were separately requested.
 - Desktop static preview inspected at 930-pixel artwork width. Actual GitHub
   branch rendering and a mobile viewport were also inspected before delivery.
 - The text-only alternative is deliberately wide and scrollable; the README SVG

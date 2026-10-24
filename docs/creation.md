@@ -38,5 +38,4 @@ necessary. A dense hand grid cannot retain this detail in a narrow plain `<pre>`
 block. The SVG scales the complete composition to the available width.
 
 The artwork is static for every viewer, including those requesting reduced
-motion. Descriptive alt text accompanies the README image. The rest of the
-README is preserved byte-for-byte after its original header.
+motion. Descriptive alt text accompanies the README image. The approved static artwork is retained during later profile-content revisions.
