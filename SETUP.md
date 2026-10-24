@@ -12,12 +12,17 @@ pull request before merging into the default branch.
 - **Learning:** keep the C++/DSA status honest. The current plan begins the week
   of 26 October 2026; update the paragraph and TOML `next` field as work starts.
 - **Toolbox:** distinguish languages already used from those being learned.
-- **Contact:** use only real public destinations; add coding-profile links when
-  the owner supplies them.
+  Regenerate the self-hosted logo badges with `python3 scripts/generate_stack.py`.
+- **Projects:** the My Projects button opens `projects/README.md`; keep the
+  public project catalogue and demonstrations current.
+- **Contact:** use only real public destinations. The supplied LeetCode username
+  is `farhanakhtar0x66`.
 
-The learning roadmap lives in `learning/cpp-dsa.md`. It is a plan, not a progress
-tracker. Link a practice repository once one exists rather than publishing
-unverified problem counts or completed milestones.
+The learning roadmap lives in `learning/cpp-dsa.md`. Practice uploads live in
+[the public dsa-cpp repository](https://github.com/farhanakhtar0x66/dsa-cpp).
+That repository owns the LeetCode data refresh and generates the desktop/mobile
+activity SVGs embedded here. See `docs/dsa-activity.md` for metric definitions
+and refresh timing.
 
 ## Edit the static header
 

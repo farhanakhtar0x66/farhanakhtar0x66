@@ -30,8 +30,10 @@ remain visible. Existing LEX and hackathon-kit descriptions are retained.
 
 The owner said they will start DSA in C++ next week. On 24 October 2026, that is
 the week of 26 October. It is presented as a future learning plan, not work
-already completed. No public DSA repository or solved-problem count is invented.
-The roadmap is a proposed sequence with no fabricated progress or deadlines.
+already completed. A public `dsa-cpp` repository was subsequently created at the owner's request,
+and the supplied LeetCode username was verified before adding the activity card.
+The roadmap remains a proposed sequence; actual LeetCode activity is sourced
+from the platform.
 
 ## Maintenance
 

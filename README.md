@@ -86,7 +86,7 @@ Starting the week of **26 October 2026**. The aim is to understand the reasoning
 - **Connect the ideas:** linked structures, trees, graphs, and dynamic programming.
 
 <picture>
-  <source media="(max-width: 1000px)" srcset="https://raw.githubusercontent.com/farhanakhtar0x66/dsa-cpp/main/assets/leetcode-mobile.svg" />
+  <source media="(max-width: 1000px)" srcset="https://raw.githubusercontent.com/farhanakhtar0x66/dsa-cpp/main/assets/leetcode-mobile.svg?v=2" />
   <img src="https://raw.githubusercontent.com/farhanakhtar0x66/dsa-cpp/main/assets/leetcode.svg" width="920" alt="LeetCode accepted-problem totals, submission streak, and past-year activity for farhanakhtar0x66. The card shows its last refresh time." />
 </picture>
 
