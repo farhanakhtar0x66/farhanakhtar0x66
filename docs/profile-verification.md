@@ -65,3 +65,9 @@ The API snapshot is historical data at its visible refresh time. Future
 LeetCode/API outages or delayed GitHub schedules remain external dependencies;
 a failed refresh retains the last successful committed snapshot. No accepted
 solutions, completed practice or activity is fabricated.
+
+![LeetCode activity and themed logos](previews/activity-and-stack-desktop.png)
+
+![Mobile activity card](previews/activity-mobile.png)
+
+![Project catalogue](previews/project-catalogue.png)
