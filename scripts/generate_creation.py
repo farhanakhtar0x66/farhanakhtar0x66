@@ -26,8 +26,11 @@ def read_art():
 
 
 def zone(row, col):
+    # Give all four sides of the frame the same quiet contrast.
+    if col in (0, 92):
+        return 'frame'
     # Only the distal index contours move; palms, knuckles and other digits stay fixed.
-    if row in (13, 14) and 38 <= col <= 44:
+    if row in (13, 14) and 38 <= col <= 45:
         return 'left'
     if row in (13, 14) and 47 <= col <= 53:
         return 'right'
@@ -67,7 +70,7 @@ def svg(rows, animated=True):
                 out.append(f'<text class="{cls}" x="{xs}" y="{PAD+row*LINE+SIZE}">{escape("".join(c for i,c in chars))}</text>')
             start = end
     # The gap lies between the two index fingertips on row 14.
-    out += [f'<text class="spark" x="{PAD+45.5*CELL}" y="{PAD+14*LINE+SIZE}">·</text>', '</svg>']
+    out += [f'<text class="spark" x="{PAD+46.5*CELL}" y="{PAD+14*LINE+SIZE}">•</text>', '</svg>']
     return '\n'.join(out)+'\n'
 
 

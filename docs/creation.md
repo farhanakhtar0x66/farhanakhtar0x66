@@ -32,7 +32,7 @@ they remain untouched.
 
 The CSS loop lasts ten seconds. From 0–6 seconds everything is still. From
 6–7.2 seconds the distal index contours approach by four SVG units each (less
-than half a cell); they hold until 7.8 seconds. A single lavender middle dot
+than half a cell); they hold until 7.8 seconds. A single lavender stipple dot
 fades in and out from 7.2–8 seconds. The fingers return by 8.8 seconds, then stay
 still across the loop boundary. The fingertips never touch. No rapid flashing.
 
