@@ -1,0 +1,2 @@
+# Fixed-width text artwork intentionally pads lines with spaces.
+art/*.txt whitespace=-blank-at-eol
