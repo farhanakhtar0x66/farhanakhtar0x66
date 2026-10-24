@@ -22,6 +22,7 @@
   <a href="mailto:farhanakhtar0x66@gmail.com">email</a>
 </p>
 
+<p>This was the harshness of reality, and also the beauty of fate. In this world, everyone is a main character, but everyone is also a side character.</p>
 ---
 
 <a id="about"></a>
